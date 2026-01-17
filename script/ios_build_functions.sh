@@ -68,7 +68,7 @@ function build_all_archs ()
 
     for ARCH in ${ARCHS}
     do
-        # All builds are for iphoneos (no simulator support)
+        # All builds target iphoneos platform (Intel simulator architectures removed)
         PLATFORM="iphoneos"
 
         SDKVERSION=$(ios_sdk_version)
